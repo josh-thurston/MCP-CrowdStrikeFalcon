@@ -1,0 +1,14 @@
+# MCP Toolkit configuration for CrowdStrike Falcon MCP Server
+# This file enables automatic discovery of the STDIO server
+
+servers:
+  crowdstrike-falcon:
+    command: python
+    args:
+      - -m
+      - src.mcp_server
+    env:
+      TRANSPORT_MODE: stdio
+    description: "CrowdStrike Falcon MCP Server - STDIO transport"
+    transport: stdio
+
