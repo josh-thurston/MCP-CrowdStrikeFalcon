@@ -7,6 +7,12 @@ on:
       - master
     tags:
       - 'v*'
+    paths:
+      - 'README.md'
+      - 'Dockerfile'
+      - 'src/**'
+      - 'requirements.txt'
+      - '.github/workflows/docker-publish.yml'
   pull_request:
     branches:
       - main
